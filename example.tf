@@ -4,15 +4,19 @@
 
 module "Ubuntu1"{
   source="./modules"
-  instance_name="Ubuntu-Instance-1
+  instance_name="Ubuntu-1"
 }
 
 module "Ubuntu2"{
   source="./modules"
-  instance_name="Ubuntu-Instance-2
+  instance_name="Ubuntu-2"
 }
 
 module "Ubuntu3"{
   source="./modules"
-  instance_name="Ubuntu-Instance-3
+  instance_name="Ubuntu-3"
+}
+module "Ubuntu3"{
+  source="./modules"
+  instance_name="Ubuntu-4"
 }
