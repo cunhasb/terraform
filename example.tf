@@ -7,16 +7,8 @@ module "Ubuntu1"{
   instance_name="Ubuntu-1"
 }
 
-module "Ubuntu2"{
-  source="./modules"
-  instance_name="Ubuntu-2"
-}
 
-module "Ubuntu3"{
-  source="./modules"
-  instance_name="Ubuntu-3"
-}
-module "Ubuntu3"{
-  source="./modules"
-  instance_name="Ubuntu-4"
+module "elb_example_complete" {
+  source  = "terraform-aws-modules/elb/aws//examples/complete"
+  version = "1.4.1"
 }
